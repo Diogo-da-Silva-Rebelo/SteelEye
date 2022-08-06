@@ -35,3 +35,6 @@ def toStr(element):
     return string
 
 
+def release_list(a):
+    del a[:]
+    del a

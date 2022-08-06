@@ -6,7 +6,7 @@ import wget
 import zipfile
 import logger as log
 import shutil
-from toStrAux import toStr
+from toStrAux import toStr, release_list
 from tqdm import tqdm
 
 
@@ -95,6 +95,8 @@ def get_link(doc_name, doc_number):
                     break
                 else:
                     docn = docn + 1
+                    release_list(keys)
+                    release_list(texts)
                 num_fields = 0
 
         i = 0
